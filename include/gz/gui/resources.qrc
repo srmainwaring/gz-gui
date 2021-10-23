@@ -22,6 +22,11 @@
   <file>qml/StandaloneDialog.qml</file>
   <file>qml/StyleDialog.qml</file>
 
+  <file>qml/GzGammaAdjust.qml</file>
+  <file>qml/private/shaders/gammaadjust.frag</file>
+  <file>qml/private/shaders/+glslcore/gammaadjust.frag</file>
+  <file>qml/private/shaders/+qsb/gammaadjust.frag</file>
+
   <file>qml/images/gazebo_logo.png</file>
   <file>qml/images/drawer.png</file>
   <file>qml/images/menu.png</file>

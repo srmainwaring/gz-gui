@@ -19,6 +19,7 @@ import QtQuick 2.9
 import QtQuick.Controls 2.0
 import QtQuick.Layouts 1.3
 import RenderWindow 1.0
+import "qrc:/qml"
 
 Rectangle {
   Layout.minimumWidth: 200
@@ -57,7 +58,7 @@ Rectangle {
   /*
    * Gamma correction for sRGB output. Enabled when engine is set to ogre2
    */
-  GammaAdjust {
+  GzGammaAdjust {
       anchors.fill: renderWindow
       source: renderWindow
       gamma: 2.4
