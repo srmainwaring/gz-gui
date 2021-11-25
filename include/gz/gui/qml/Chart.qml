@@ -123,7 +123,7 @@ Rectangle {
   function fixOpenGL()
   {
     lineSeries.useOpenGL = false;
-    lineSeries.useOpenGL = true;
+    lineSeries.useOpenGL = false;
   }
 
 
@@ -488,7 +488,7 @@ Rectangle {
     function addSeries(ID, seriesDisplayText) {
       var seriesName = (seriesDisplayText) ? seriesDisplayText : ID
       var newSeries = createSeries(ChartView.SeriesTypeLine, seriesName, xAxis, yAxis);
-      newSeries.useOpenGL = true;
+      newSeries.useOpenGL = false;
       newSeries.width = 2;
       newSeries.color = chart.colors[chart.indexColor % chart.colors.length]
       serieses[ID] = newSeries;
@@ -704,7 +704,7 @@ Rectangle {
       axisX: xAxis
       axisY: yAxis
       visible: false
-      useOpenGL: true
+      useOpenGL: false
     }
 
     Text {
