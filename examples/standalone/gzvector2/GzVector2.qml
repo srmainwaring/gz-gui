@@ -108,7 +108,7 @@ Item {
     id: gzVectorContent
     width: parent.width
     height: expand ? gzVectorGrid.height : 0
-    // clip: true
+    clip: true
     color: "transparent"
 
     Behavior on height {

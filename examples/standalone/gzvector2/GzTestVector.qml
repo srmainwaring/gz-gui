@@ -21,20 +21,57 @@ import gz.gui 1.0
 import "qrc:/GzTestVector_qml"
 
 Column {
-  id: gzTestVector
   anchors.fill: parent
-
   spacing: 2
 
+  Label {
+    font.bold: true
+    font.pointSize: 18
+    text: "Double GzSpinBox"
+  }
+
+  // Double spin box
+  GzSpinBox {
+    minimumValue: -2.5
+    maximumValue: 19.3
+    decimals: 4
+    stepSize: 3.6
+    value: 5.8
+    width: 300
+  }
+
+  Label {
+    font.bold: true
+    font.pointSize: 18
+    text: "Editable GzVector2"
+  }
+
   GzVector2 {
-    id: gzVector2
+    readOnly: false
     xValue: 1.0
     yValue: 2.0
     onGzVectorSet: {
       xValue = _x
       yValue = _y
-      console.log(xValue, yValue)
+      console.log("(", xValue, ", ", yValue, ")")
     }
+    width: 300
+  }
+
+  Label {
+    font.bold: true
+    font.pointSize: 18
+    text: "Double GzSpinBox"
+  }
+
+  // Double spin box
+  GzSpinBox {
+    minimumValue: 0.0
+    maximumValue: 1.0
+    decimals: 2
+    stepSize: 0.1
+    value: 0.5
+    width: 300
   }
 
 }
