@@ -17,6 +17,7 @@
 import QtQuick 2.9
 import QtQuick.Controls 2.2
 import QtQuick.Layouts 1.3
+import gz.gui 1.0
 import "qrc:/GzTestVector_qml"
 
 Column {
@@ -26,14 +27,14 @@ Column {
   spacing: 2
 
   GzVector2 {
-    id: gzVector
-    property double xModel: 120
-    property double yModel: 110
-    // onGzVectorSet: {
-    //   xModel = 1
-    //   yModel = 2
-    //   console.log(xModel, yModel)
-    // }
+    id: gzVector2
+    xValue: 1.0
+    yValue: 2.0
+    onGzVectorSet: {
+      xValue = _x
+      yValue = _y
+      console.log(xValue, yValue)
+    }
   }
 
 }
