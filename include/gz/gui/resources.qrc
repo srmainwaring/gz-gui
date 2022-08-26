@@ -38,6 +38,8 @@
     <file alias="GzSnackBar.qml">qml/GzSnackBar.qml</file>
     <file alias="GzSpinBox.qml">qml/GzSpinBox.qml</file>
     <file alias="GzVector3.qml">qml/GzVector3.qml</file>
+
+    <file alias="GzHelpers.qml">qml/GzHelpers.qml</file>
 </qresource>
 
 <!-- Deprecated module - remove on tock -->
@@ -48,5 +50,7 @@
     <file alias="GzSnackBar.qml">qml/GzSnackBar.qml</file>
     <file alias="GzSpinBox.qml">qml/GzSpinBox.qml</file>
     <file alias="GzVector3.qml">qml/GzVector3.qml</file>
+
+    <file alias="GzHelpers.qml">qml/GzHelpers.qml</file>
 </qresource>
 </RCC>

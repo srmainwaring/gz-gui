@@ -5,6 +5,7 @@ GzPose 1.0 GzPose.qml
 GzSnackBar 1.0 GzSnackBar.qml
 GzSpinBox 1.0 GzSpinBox.qml
 GzVector3 1.0 GzVector3.qml
+GzHelpers 1.0 GzHelpers.qml
 
 # Deprecated components, remove on tock
 IgnSnackBar 1.0 GzSnackBar.qml
