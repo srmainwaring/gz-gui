@@ -1,0 +1,16 @@
+<!DOCTYPE RCC><RCC version="1.0">
+  <!--
+    Main entry point needs to be in the prefix which matches its name.
+  -->
+  <qresource prefix="GzTestVector/">
+    <file>GzTestVector.qml</file>
+  </qresource>
+
+  <!--
+    Other QMLs need to be in a different prefix, which will
+    be imported in the main file above.
+  -->
+  <qresource prefix="GzTestVector_qml">
+    <file>GzVector2.qml</file>
+  </qresource>
+</RCC>
