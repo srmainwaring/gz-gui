@@ -15,14 +15,14 @@
  *
 */
 import QtQml.Models 2.2
-import QtQuick 2.0
-import QtQuick.Controls 1.4
+import QtQuick 2.9
+import QtQuick.Controls 1.4 as QQC1
 import QtQuick.Controls 2.2
 import QtQuick.Controls.Styles 1.4
-import QtQuick.Controls.Material 2.1
+import QtQuick.Controls.Material 2.2
 import QtQuick.Layouts 1.3
 
-TreeView {
+QQC1.TreeView {
     objectName: "treeView"
     id:tree
     model: TopicsModel
@@ -52,7 +52,7 @@ TreeView {
         visible: false
     }
     backgroundVisible: false;
-    TableViewColumn
+    QQC1.TableViewColumn
     {
         role: "name";
     }

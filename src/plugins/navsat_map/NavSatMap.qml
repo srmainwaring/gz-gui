@@ -17,7 +17,7 @@
 import QtQuick 2.9
 import QtQuick.Controls 2.2
 import QtQuick.Layouts 1.3
-import QtQuick.Controls.Material 2.1
+import QtQuick.Controls.Material 2.2
 import QtLocation 5.6
 import QtPositioning 5.6
 

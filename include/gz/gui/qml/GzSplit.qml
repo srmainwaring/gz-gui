@@ -15,16 +15,16 @@
  *
 */
 import QtQuick 2.9
-import QtQuick.Controls 1.1
+import QtQuick.Controls 1.4 as QQC1
 import QtQuick.Controls 2.2
-import QtQuick.Controls.Material 2.1
+import QtQuick.Controls.Material 2.2
 import QtQuick.Layouts 1.3
 
 /**
  * Main split view, which provides functions to add and remove child items
  * and splits.
  */
-SplitView {
+QQC1.SplitView {
 
   id: background
   objectName: "background"
@@ -327,7 +327,7 @@ SplitView {
         // TODO(louise) This only works for a very specific split
         height: window.height - window.header.height
 
-        SplitView {
+        QQC1.SplitView {
           id: split
           width: splitWrapper.width - scrollBarWidth
           height: Math.max(childItems[Object.keys(childItems)[0]].height,

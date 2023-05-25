@@ -18,7 +18,7 @@
 import QtQuick 2.9
 import QtQuick.Controls 2.1
 import QtQuick.Dialogs 1.0
-import QtQuick.Controls.Material 2.1
+import QtQuick.Controls.Material 2.2
 import QtQuick.Layouts 1.3
 import gz.gui 1.0
 import "qrc:/qml"
