@@ -6,6 +6,7 @@
   <file>qml/GzCard.qml</file>
   <file>qml/GzColor.qml</file>
   <file>qml/GzCardSettings.qml</file>
+  <file>qml/GzDoubleSpinBox.qml</file>
   <file>qml/GzHelpers.qml</file>
   <file>qml/GzPlotIcon.qml</file>
   <file>qml/GzPose.qml</file>
@@ -36,6 +37,7 @@
 
     <!-- Add any QML components referenced in the qmldir file here -->
     <file alias="GzColor.qml">qml/GzColor.qml</file>
+    <file alias="GzDoubleSpinBox.qml">qml/GzDoubleSpinBox.qml</file>
     <file alias="GzPlotIcon.qml">qml/GzPlotIcon.qml</file>
     <file alias="GzPose.qml">qml/GzPose.qml</file>
     <file alias="GzSnackBar.qml">qml/GzSnackBar.qml</file>

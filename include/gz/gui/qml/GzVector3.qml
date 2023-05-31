@@ -95,13 +95,13 @@ Item {
    */
   Component {
     id: writableNumber
-    GzSpinBox {
+    GzDoubleSpinBox {
       id: writableSpin
       value: numberValue
-      minimumValue: -spinMax
-      maximumValue: spinMax
+      from: -spinMax
+      to: spinMax
       decimals: gzHelper.getDecimals(writableSpin.width)
-      onEditingFinished: {
+      onValueModified: {
         gzVectorRoot.gzVectorSet(xItem.value, yItem.value, zItem.value)
       }
     }

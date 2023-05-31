@@ -108,14 +108,14 @@ GridLayout {
     text: "Vertical"
   }
 
-  GzSpinBox {
+  GzDoubleSpinBox {
     Layout.columnSpan: 2
     Layout.fillWidth: true
     id: verticalCellCount
-    maximumValue: Number.MAX_VALUE
-    minimumValue: 0
+    to: Number.MAX_VALUE
+    from: 0
     value: 0
-    onEditingFinished: GridConfig.UpdateVCellCount(verticalCellCount.value)
+    onValueModified: GridConfig.UpdateVCellCount(verticalCellCount.value)
   }
 
   Text {
@@ -125,14 +125,14 @@ GridLayout {
     text: "Horizontal"
   }
 
-  GzSpinBox {
+  GzDoubleSpinBox {
     Layout.columnSpan: 2
     Layout.fillWidth: true
     id: horizontalCellCount
-    maximumValue: Number.MAX_VALUE
-    minimumValue: 1
+    to: Number.MAX_VALUE
+    from: 1
     value: 20
-    onEditingFinished: GridConfig.UpdateHCellCount(horizontalCellCount.value)
+    onValueModified: GridConfig.UpdateHCellCount(horizontalCellCount.value)
   }
 
   Text {
@@ -149,16 +149,16 @@ GridLayout {
     color: "dimgrey"
     text: "Length (m)"
   }
-  GzSpinBox {
+  GzDoubleSpinBox {
     Layout.columnSpan: 2
     Layout.fillWidth: true
     id: cellLength
-    maximumValue: Number.MAX_VALUE
-    minimumValue: 0.0000001
+    to: Number.MAX_VALUE
+    from: 0.0000001
     value: 1.00
     decimals: gzHelpers.getDecimals(cellLength.width)
     stepSize: 0.01
-    onEditingFinished: GridConfig.UpdateCellLength(cellLength.value)
+    onValueModified: GridConfig.UpdateCellLength(cellLength.value)
   }
 
   Text {

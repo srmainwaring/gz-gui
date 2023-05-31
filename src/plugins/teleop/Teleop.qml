@@ -119,15 +119,15 @@ ColumnLayout {
       text: "Forward (m/s)"
       color: "dimgrey"
     }
-    GzSpinBox {
+    GzDoubleSpinBox {
       id: maxForwardVelField
       Layout.fillWidth: true
       value: maxForwardVel
-      maximumValue: 10000.0
-      minimumValue: 0.0
+      to: 10000.0
+      from: 0.0
       decimals: 2
       stepSize: 0.10
-      onEditingFinished:{
+      onValueModified:{
         Teleop.SetMaxForwardVel(value)
       }
     }
@@ -138,15 +138,15 @@ ColumnLayout {
       text: "Vertical (m/s)"
       color: "dimgrey"
     }
-    GzSpinBox {
+    GzDoubleSpinBox {
       id: maxVerticalVelField
       Layout.fillWidth: true
       value: maxVerticalVel
-      maximumValue: 10000.0
-      minimumValue: 0.0
+      to: 10000.0
+      from: 0.0
       decimals: 2
       stepSize: 0.10
-      onEditingFinished:{
+      onValueModified:{
         Teleop.SetMaxVerticalVel(value)
       }
     }
@@ -157,15 +157,15 @@ ColumnLayout {
       text: "Yaw (rad/s)"
       color: "dimgrey"
     }
-    GzSpinBox {
+    GzDoubleSpinBox {
       id: maxYawVelField
       Layout.fillWidth: true
       value: maxYawVel
-      maximumValue: 10000.0
-      minimumValue: 0.0
+      to: 10000.0
+      from: 0.0
       decimals: 2
       stepSize: 0.10
-      onEditingFinished:{
+      onValueModified:{
         Teleop.SetMaxYawVel(value)
       }
     }
