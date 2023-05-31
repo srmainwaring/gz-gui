@@ -1,6 +1,7 @@
 module gz.gui
 
 GzColor 1.0 GzColor.qml
+GzDoubleSpinBox 1.0 GzDoubleSpinBox.qml
 GzPose 1.0 GzPose.qml
 GzSnackBar 1.0 GzSnackBar.qml
 GzSpinBox 1.0 GzSpinBox.qml

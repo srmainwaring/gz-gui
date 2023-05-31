@@ -133,9 +133,9 @@ Dialog {
         }
       }
 
-      GzSpinBox {
+      GzDoubleSpinBox {
         visible: !cardPane.anchored
-        maximumValue: cardPane.parent ? cardPane.parent.width - cardPane.width : minSize
+        to: cardPane.parent ? cardPane.parent.width - cardPane.width : minSize
         onVisibleChanged: value = cardPane.x
         onValueChanged: {
           cardPane.x = value;
@@ -145,9 +145,9 @@ Dialog {
         visible: !cardPane.anchored
         text: "X"
       }
-      GzSpinBox {
+      GzDoubleSpinBox {
         visible: !cardPane.anchored
-        maximumValue: cardPane.parent ? cardPane.parent.height - cardPane.height : minSize
+        to: cardPane.parent ? cardPane.parent.height - cardPane.height : minSize
         onVisibleChanged: value = cardPane.y
         onValueChanged: {
           cardPane.y = value;
@@ -157,9 +157,9 @@ Dialog {
         visible: !cardPane.anchored
         text: "Y"
       }
-      GzSpinBox {
+      GzDoubleSpinBox {
         visible: !cardPane.anchored
-        maximumValue: 10000
+        to: 10000
         onVisibleChanged: value = cardPane.z
         onValueChanged: {
           cardPane.z = value;

@@ -23,18 +23,18 @@ Column {
   spacing: 2
 
   // Integer spin box
-  GzSpinBox {
-    minimumValue: -2
-    maximumValue: 19
+  GzDoubleSpinBox {
+    from: -2
+    to: 19
     decimals: 0
     stepSize: 3
     value: 5
   }
 
   // Double spin box
-  GzSpinBox {
-    minimumValue: -2.5
-    maximumValue: 19.3
+  GzDoubleSpinBox {
+    from: -2.5
+    to: 19.3
     decimals: 4
     stepSize: 3.6
     value: 5.8
